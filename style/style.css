@@ -1,0 +1,109 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: arial, sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+table {
+    color: #bfbfbf;
+    align-items: center;
+    width: 80%px;
+    height: 500px;
+    position: static;
+    
+}
+th {
+    border: solid 2px #1a1a1a;
+    width: 400px;
+}
+th:hover {
+    border: solid 2px #bfbfbf;
+    transition: 1.5s;
+}
+table tr th a {
+    display: block;
+    text-decoration: none;
+    color: #bfbfbf;
+    padding: 150px 0px;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #1a1a1a;
+    font-family: arial, sans-serif;
+    height: 52px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+nav ul {
+    list-style: none;
+    margin:  0 auto;
+    padding 0; 
+    width: 100%;
+    max-width:1800px;
+    
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top 100%;
+    left: 0;
+    width: 100%;
+    
+}
+nav ul li {
+    position: relative;
+    float: left;
+    width: 16%;
+    text-align: center;
+}
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li li {
+    background-color: #1a1a1a;
+    position: relative;
+    float: none;
+    width: 100%;
+    border: none;
+    text-align: left;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #bfbfbf;
+    padding: 17px 25px;
+    box-sizing: border-box;
+}
+nav ul li:hover a {
+    background: #bfbfbf; 
+    color: #1a1a1a; 
+    text-decoration: none; 
+    transition: 0.5s;
+    font-size: 17px;
+}
+nav ul li li:hover a {
+    background: #1a1a1a; 
+    color: #bfbfbf;
+    transition: 0.5s;
+    font-size: 17px;
+}
+img.growth1 {
+    width: 300px;
+}
+img.growth1:hover {
+    width: 310px;
+    transition: 0.3s;
+    cursor: -moz-zoom-in;
+    
+}
+
+
+
+
+
+
+
+
