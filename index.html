@@ -9,30 +9,14 @@
             <meta name="revisit-after" content="120 days">
             <meta name="creation_date" content="04/08/2022">
             <meta name="owner" content="Trolese Leonardo">
+        
             <link rel="stylesheet" href="style/style.css">
     		<style type="text/css">
-			#box1 {
-				background-image: url("https://images7.alphacoders.com/891/thumb-1920-891192.jpg");
-                background-attachment: scroll;
-                background-size: auto;
-				width: 100%;
-				height: 600px;
-				border: 0px;
-				padding: 0px;
-				margin: 0px;
-                padding-top: 130px;
-                text-align: center;
-                font-size: 125px;
-                font-family: arial, sans-serif;
-                color: #dbdbdb;
-                line-height: 50px;
-			}
-
             </style> 
             <title>Studio Trolese</title>
   	</head>
   	<body>
-    	<header>
+        <header>
             <nav>
                 <ul>
                     <li><a href="vati.it">CHI SIAMO</a></li>
@@ -56,11 +40,68 @@
                 </ul>
             </nav>
         </header>
+        <br>
+        <br>
+        <br>
+        <div style="position: absolute; z-index: 2;" class="name">
+            <h1>Studio Trolese</h1>
+            <p>Studio tecnico di progettazione edilizia e pratiche correlate</p>
+            <br>
+            <a class="left" onclick="nextSlide(-1)">❮</a>  
+            <a class="right" onclick="nextSlide(1)">❯</a>
+            <img src="https://www.payplug.com/hubfs/Banque%20images_featured.png" class="growth1" title="Logo" alt="Immagine non caricata">
+        </div>
+        <div class="slidercontainer">  
+            <div class="showSlide fade">  
+                <img src="images/img0.jpg" />  
+  
+            </div>  
+            <div class="showSlide fade">  
+                <img src="images/img2.jpg" />  
+ 
+            </div>  
+            <div class="showSlide fade">  
+                <img src="images/img3.jpg" />    
+            </div>  
+            <div class="showSlide fade">  
+                <img src="images/img4.jpg" />  
+                <div class="content">
+                    <!-- nel caso volessi aggiungere contenuto dentro la slide aggiungilo qua-->
+                </div>  
+            </div>  
+            <!-- Frecce di navigazione spostate nel div del titolo per via di problemi di sovrapposizione -->    
+        </div>  
+
+        <script type="text/javascript">  
+            var slide_index = 1;  
+            displaySlides(slide_index);  
+
+            function nextSlide(n) {  
+                displaySlides(slide_index += n);  
+            }  
+
+            function currentSlide(n) {  
+                displaySlides(slide_index = n);  
+            }  
+
+            function displaySlides(n) {  
+                var i;  
+                var slides = document.getElementsByClassName("showSlide");  
+                if (n > slides.length) { slide_index = 1 }  
+                if (n < 1) { slide_index = slides.length }  
+                for (i = 0; i < slides.length; i++) {  
+                    slides[i].style.display = "none";  
+                }  
+                slides[slide_index - 1].style.display = "block";  
+            }  
+        </script>
+        <!--
         <div id="box1">
             Studio Trolese <br>
             <span style="font-size: 24px; font-family: arial, sans-serif; color #bfbfbf">Studio tecnico di progettazione edilizia e pratiche correlate</span><br><br><br>
-            <img src="https://www.payplug.com/hubfs/Banque%20images_featured.png" class="growth1" title="Logo" alt="Errore: ricaricare il sito">
+            <img src="https://www.payplug.com/hubfs/Banque%20images_featured.png" class="growth1" title="Logo" alt="Immagine non caricata">
         </div>
+        -->
     	<br>
         <br>
         <br>
@@ -68,15 +109,11 @@
         <br>
         <br>
         <br>
-        <center>
-            <table cellspacing="60px" cellpadding="30px">
-                <tr>
-                    <th><a href="vati.it">content</a></th>
-                    <th><a href="vati.it">content</a></th>
-                    <th><a href="vati.it">content</a></th>
-                </tr>
-            </table>
-        </center>
+        <div class="grid-container">
+            <div class="grid-item1">1</div>
+            <div class="grid-item1">2</div>
+            <div class="grid-item1">3</div>
+        </div>
         <br>
         <br>
         <br>
@@ -93,5 +130,20 @@
         <br>
         <br>
         <br>
+        <!--
+        <div align="center">
+            <a class="zoom-effect" title="Blogger Girl con Laptop" href="" target="_blank">   
+                <img border="0" src="https://www.payplug.com/hubfs/Banque%20images_featured.png" height="300" width="450" />
+            </a>
+        </div>
+
+
+        <figure class="cap-left">
+	       <img src="https://www.payplug.com/hubfs/Banque%20images_featured.png" alt="Immagine non caricata" width="300px" class="growth1">
+	       <figcaption>
+		      yay!!!
+	       </figcaption>
+        </figure>
+        -->
   	</body>
 </html>
