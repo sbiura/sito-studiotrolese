@@ -19,10 +19,12 @@
     line-height: 50px;
 }
 */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap');
+
 body {
     background-color: #1a1a1a;
     color: white;
-    font-family: arial, sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     text-align: center;
 }
 /*Griglia di dimensioni responsive per contenuti---------------------------------------------------------------------------------------------------https://www.ionos.it/digitalguide/siti-web/creare-siti/css-grid/---------------------------------------------------------------------------------*/
@@ -296,7 +298,7 @@ display: none
     width: 99.1%;
     text-align: center;
     color: white;
-    font-family: arial, sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     height: 750px
 }
 .name h1 {
